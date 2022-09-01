@@ -45,7 +45,7 @@ The game screen appears here if your browser supports the Canvas API.
 
 <h2>Attribution</h2>
 
-<p><a href="https://wireframe.raspberrypi.org/issues/55">Source Code: make a Tranz Am driving game, pages 66-67, by Mark Vanstone</a>.</p>
+<p><a href="https://wireframe.raspberrypi.com/issues/55">Source Code: make a Tranz Am driving game, pages 66-67, by Mark Vanstone</a>.</p>
 
 <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported</a>.</p>
 
@@ -284,11 +284,7 @@ function limit(n, minn, maxn) {
 }
 
 window.addEventListener('load', (event) => {
-  images.LOAD('#imageLoader img');
-  // Non-standard order for Surface
-  screen.set_mode('#screen', '#reset', '#pause');
-  reset();
-  screen.draw.playButton();
+  screen.init();
 });
 </script>
 </body>

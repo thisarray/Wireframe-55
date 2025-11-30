@@ -170,19 +170,19 @@ function draw() {
   screen.draw.filled_rect(new Rect([60, 400], [car.fuel, 20]), [0, 255, 0]);
   screen.draw.filled_rect(new Rect([60, 349], [car.speed * 26, 20]), [255, 0, 0]);
   screen.draw.filled_rect(new Rect([60, 450], [car.temp, 20]), [255, 128, 0]);
-  screen.draw.text(cups.toFixed(0), {
+  screen.draw.text(cups.toFixed(), {
     center: [140, 548],
     owidth: 0.5,
     ocolor: [255, 255, 255],
     color: [0, 0, 255],
     fontsize: 130
   });
-  screen.draw.text(Math.trunc(count / 50).toFixed(0), {
+  screen.draw.text(Math.trunc(count / 50).toFixed(), {
     center: [100, 108],
     color: [255, 255, 255],
     fontsize: 30
   });
-  screen.draw.text(Math.trunc(miles).toFixed(0), {
+  screen.draw.text(Math.trunc(miles).toFixed(), {
     center: [100, 150],
     color: [255, 255, 255],
     fontsize: 30
